@@ -1,0 +1,103 @@
+GitHub is an online tool that uses Git, a system for controlling versions, 
+to help developers organise and save their code. It provides options for storing 
+repositories, managing versions, and working together with others. 
+GitHub allows multiple developers to work on a project at once, 
+keep track of changes, and smoothly combine updates. Functions like pull requests,
+ code reviews, and issue tracking promote teamwork, discussions, and enhancements
+  for code.https://g.co/kgs/kaw3JbL
+
+A GitHub repository acts as a storage space for a project, 
+holding all project files like code, documentation, and resources. 
+To set up a new repository, you'll log in to GitHub and tap on the "+" symbol in the top-right corner,
+ then pick "New repository." 
+ You'll need to give it a name, write a description, 
+ and decide if it'll be public or private. 
+ You may want to include a README file, a .gitignore file to exclude certain files and choose a license. 
+ Once that's done, hit "Create repository." 
+ Important parts of a repository include README.md, which explains the project and how to contribute. 
+ LICENSE, which outlines version control is like a time machine for files, keeping track of changes and letting developers go back to earlier versions. 
+ With Git, it's about taking snapshots of a project at different times. 
+ GitHub takes version control up a notch by offering a central spot for hosting repositories, making it easy to work together. 
+ GitHub's setup makes tasks like branching, merging, and managing pull requests a breeze, making version control smoother and more accessible.s usage terms. 
+ .gitignore, which lists ignored files. src/ or code/, the source code directory.
+
+Version control is like a storage system for files, keeping track of changes and 
+letting developers go back to earlier versions of work done. 
+With Git, it is about taking snapshots of a project at different times. 
+GitHub version control offers a central spot for hosting repositories, making it
+ easy to work together. GitHub's setup makes tasks like branching, merging, and 
+ managing pull requests a breeze, making version control smoother and more
+  accessible.
+
+Branches in GitHub act as references to specific commits and changes made. 
+They provide a way to work on different features or bug fixes separately from the
+ main codebase. https://docs.github.com/articles/about-branches
+
+How I Created a Git Branch
+I went to your GitHub repository.
+I Clicked on the branch dropdown and enter a new branch name, 
+then click "Create branch."
+
+How To make changes:
+Switch to the new branch.
+Make necessary changes to the files and commit them.
+How To merge back into the main branch:
+Navigate to the main branch.
+Click "New pull request."
+Select the branch containing your changes and create the pull request.
+Review the changes and, if everything looks good, merge the pull request.
+
+A pull request (PR) is a request to merge changes from one branch into another. 
+It allows for code reviews and collaboration by allowing team members to discuss and review changes before merging them.
+
+To create a pull request:
+Push your branch to GitHub.
+Click on "Pull requests" and then "New pull request."
+Select the branch with your changes.
+Add a title and description, and create the pull request.
+To review a pull request:
+Navigate to the pull request.
+Review the changes.
+Leave comments or request changes if necessary.
+Approve and merge the pull request if everything looks good.
+
+GitHub Actions automates workflows for developers, saving time and effort. 
+Custom workflows enable automated building, testing, and deploying of code without manual intervention,
+ ensuring consistent testing and reliable deployment. 
+ For example, a .github/workflows/ci.yml file in the repository can set up a simple CI/CD pipeline to trigger processes when changes are made. https://docs.github.com/actions
+
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - run: npm install
+    - run: npm test
+
+Visual Studio is an integrated development environment (IDE) from Microsoft. 
+Its key features include code editing, debugging, IntelliSense, testing tools, and integration with various version control systems. It supports a wide range of programming languages and platforms. https://code.visualstudio.com/
+To integrate a GitHub repository with Visual Studio, follow these steps:
+ 
+1. Open Visual Studio and navigate to View > Team Explorer.
+2. Click on Connect and choose GitHub.
+3. Sign in to your GitHub account.
+4. Clone an existing repository or create a new one.
+
+This integration significantly improves the development workflow by enabling repository management, change commits, and direct update pushes from within Visual Studio. 
+This streamlines the development process and boosts productivity.
+
+Visual Studio provides a range of debugging tools, including breakpoints, step execution, watch windows, and immediate windows.
+ Developers can set breakpoints to pause execution at specific lines, inspect variable values, step through code line-by-line, and evaluate expressions on the fly.
+  These tools help identify and fix issues by allowing developers to closely monitor the behaviour of their code during execution. https://code.visualstudio.com/docs/editor/debugging
+  
+  GitHub and Visual Studio together create a powerful environment for collaborative development. GitHub hosts the repository and takes care of version control, while Visual Studio provides a strong IDE for coding, testing, and debugging. This partnership allows developers to easily clone repositories, commit changes, and create pull requests directly from Visual Studio, making collaboration seamless. In a real-world web development project, a team uses GitHub to manage the repository and track issues. Each developer utilises Visual Studio to write code, debug, and run tests locally. They create branches for new features, push changes to GitHub, and open pull requests for code reviews. Additionally, they set up continuous integration using GitHub Actions to automatically run tests and deploy the application upon successful merges.
+
